@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building and Styling Forms in HTML & CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Public+Sans:wght@300;400&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sytle.css">
+  </head>
+
+
+  <body>
+    <form>
+      <h1>Let's set you up with a Trainer </h1>
+      <div class="row">
+        <div class="col">   
+          <label class="required" for="first-name">First Name</label>
+          <input type="text" id="first-name" required/>
+        </div>
+        <div class="col">
+          <label class="required" for="last-name">Last Name</label>
+          <input type="text" id="last-name"required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <label class="required" for="email-name">Email</label>
+          <input type="email" id="email" required/>
+        </div>
+        <div class="col">
+          <label class="required" for="phone">Phone</label>
+          <input type="tel" id="phone" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="training-inerest">Training Inerest</label>
+          <select class="required" id="training-inerest" required>
+            <option value="cardio">Cardio</option>
+            <option value="bodybuilding">Body Building</option>
+            <option value="powerlifting">Power Lifting</option>
+            <option value="reabilitation">Rehabilitation</option>
+            <option value="mobility">Mobility</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      
+      <h4> Lets set a Meeting</h4>
+
+      <div class="row row--meeting" >
+        <div class="col">
+          <lable for="vivirtual">Virtual</lable>
+          <input type="radio" name="info-dirtabution" id="virtual" value="virtual"required/>
+        </div>
+    
+        <div class="col">
+            <lable for="in-person">In Person</lable>
+            <input type="radio" name="info-dirtabution" id=  "in-person " value="in-person" required/>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col">
+          <lable for="comments">Additional Comments</lable>
+          <textarea id="comments" rows="5"></textarea>
+        </div>
+      </div>
+
+
+
+      <div class="row--newsletter">
+        <div class="col">    
+          <input type="checkbox" value="newsletter" id="newsletter"/>
+          <lable for="newsletter">Subscribe to our news letter?</lable>
+        </div>
+      </div>
+
+      <div class="row-submit">
+        <div class="col"> 
+          <button id="btn" >Submit</button>
+        </div>
+      </div>
+          </form>
+  </body>
+
+</html>
